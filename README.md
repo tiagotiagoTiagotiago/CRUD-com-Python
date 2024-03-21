@@ -10,32 +10,46 @@ Certifique-se de ter o Python e o Django instalados no seu sistema. Se você ain
 
 
 pip install django
+
 #Instalação
+
 Clone este repositório para o seu computador:
 
+
 git clone https://github.com/seu-usuario/nome-do-repositorio.git
+
 Navegue até o diretório do projeto:
 
 cd nome-do-repositorio
+
 Crie um ambiente virtual para o projeto:
 
 python -m venv venv
+
 Ative o ambiente virtual (no Windows):
 
 .\venv\Scripts\activate
-Instale as dependências do projeto:
 
 
-pip install -r requirements.txt
+
+
 #Uso
+
 Para iniciar o servidor de desenvolvimento, execute o seguinte comando:
 
 python manage.py runserver
+
+
 Isso iniciará o servidor local. Você pode acessar o projeto no seu navegador em http://localhost:8000/.
 
 Funcionalidades
+
 Create: Adicione novos registros ao banco de dados.
+
 Read: Visualize os registros existentes.
+
 Update: Atualize os registros existentes.
+
 Delete: Remova os registros do banco de dados.
+
 
