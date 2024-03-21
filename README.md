@@ -6,29 +6,29 @@ Este é um simples projeto de CRUD (Create, Read, Update, Delete) utilizando Pyt
 
 ## Pré-requisitos
 
-Certifique-se de ter o Python e o Django instalados no seu sistema. Se você ainda não tem o Django, pode instalá-lo via pip:
+    Certifique-se de ter o Python e o Django instalados no seu sistema. Se você ainda não tem o Django, pode instalá-lo via pip:
 
 
-pip install django
+       pip install django
 
-#Instalação
+Instalação
 
 Clone este repositório para o seu computador:
 
 
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
+     git clone https://github.com/seu-usuario/nome-do-repositorio.git
 
 Navegue até o diretório do projeto:
 
-cd nome-do-repositorio
+     cd nome-do-repositorio
 
 Crie um ambiente virtual para o projeto:
 
-python -m venv venv
+     python -m venv venv
 
 Ative o ambiente virtual (no Windows):
 
-.\venv\Scripts\activate
+    cd .\venv\Scripts\activate
 
 
 
@@ -37,7 +37,7 @@ Ative o ambiente virtual (no Windows):
 
 Para iniciar o servidor de desenvolvimento, execute o seguinte comando:
 
-python manage.py runserver
+     python manage.py runserver
 
 
 Isso iniciará o servidor local. Você pode acessar o projeto no seu navegador em http://localhost:8000/.
