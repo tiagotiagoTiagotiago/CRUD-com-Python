@@ -19,6 +19,11 @@
         <a href="/form" class="btn btn-success">Adicionar</a>
     </div>
     <div class="col-8 m-auto pt-2 pb-2 text-center" >
+     <form method="get">
+      <input type="text" name="search" id="search" class="form-control" placeholder="Busque por Nome, CPF, CEP, Email, etc..">
+     </form>
+  </div>
+    <div class="col-8 m-auto pt-2 pb-2 text-center" >
         <table class="table">
             <thead class="thead-dark">
               <tr>
@@ -54,6 +59,18 @@
               </table>
         
     </div>
+
+    <!-- <div class="pagination">
+      (% if db.has_previous %)
+      <a href="?page={{db.previous_page_number}}"> < </a>
+      (% endif %)
+
+      {{db.number}}
+
+      (% if db.has_next %)
+      <a href="?page={{db.next_page_number}}"> > </a>
+      (% endif %) 
+    </div> -->
    
 </body>
 </html>

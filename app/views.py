@@ -1,11 +1,29 @@
 from django.shortcuts import render, redirect
 from app.forms import UsuarioForm
 from app.models import Usuario
+from django.core.paginator import Paginator
 
 # Create your views here.
 def home(request):
     data = {}
-    data['db'] = Usuario.objects.all()
+    search = request.GET.get('search')
+    if search:
+        data['db'] = Usuario.objects.filter(nome__icontains=search) | Usuario.objects.filter(email__icontains=search) | Usuario.objects.filter(cep__icontains=search) | Usuario.objects.filter(id__icontains=search) | Usuario.objects.filter(cpf__icontains=search) | Usuario.objects.filter(numero_telefone__icontains=search)
+            
+       # data['db'] = Usuario.objects.filter(id__icontains=search)
+       # data['db'] = Usuario.objects.filter(cpf__icontains=search)
+        #data['db'] = Usuario.objects.filter(cep__icontains=search)
+        #data['db'] = Usuario.objects.filter(email__icontains=search)
+      
+
+
+    else:
+
+     data['db'] = Usuario.objects.all()
+    #all = Usuario.objects.all()
+    #paginator = Paginator(all, 2)
+    #pages = request.GET.get('page')
+    #data['db'] = paginator.get_page(pages)
     return render(request, 'index.html', data) 
 
 def form(request):
